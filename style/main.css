@@ -13,6 +13,9 @@ Max-usefullness: minimal;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 html, body {
     height: 100%;
@@ -114,10 +117,16 @@ background-size: cover;*/
 }
 .m_nav_ham_1_open {
     -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
     margin-top: 15px;
 }
 .m_nav_ham_2_open {
     -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
     margin-top: -10px;
 }
 .m_nav_ham_3_open {
@@ -238,6 +247,12 @@ h1 {
 	top: 0;*/
         /*	z-index: 0 !important;*/
     }
+
+
+	#m_nav_menu {
+    top: 15px;
+}
+
     .m_nav_item {
         display: inline;
         line-height: 70px;
