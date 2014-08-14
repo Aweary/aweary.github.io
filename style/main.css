@@ -23,6 +23,15 @@ html, body {
     padding: 0px;
     width: 100%;
 }
+
+h1 {
+    font-weight: 300;
+    font-size: 2rem;
+    color: white;
+    
+}
+
+
 p {
     color: white;
     font-weight: 300;
@@ -39,17 +48,18 @@ p {
     /*background-image: url('../yosemite.jpg');
 background-size: cover;*/
     background: tomato;
-    position: absolute;
+    position: relative;
     top: 0px;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
+    margin: 0px auto;
     text-align: center;
 }
 /*classes used to push the wrapper down when the navbar is expanded
 */
 
 .open_wrapper {
-    top: 200px !important;
+    top: 180px !important;
 }
 .closed_wrapper {
     top: 0px !important;
@@ -60,7 +70,7 @@ background-size: cover;*/
 #m_nav_container {
     width: 100%;
     height: 200px;
-    background-color: #fff;
+    background-color: #333;
     position: fixed;
     display: none;
     /*	opacity: 0;*/
@@ -75,17 +85,20 @@ background-size: cover;*/
 }
 .m_nav_item {
     margin-top: 15px;
+
 }
 .m_nav_item a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
     font-size: 1.0em;
-    font-family: 'Bree Serif', serif !important;
+    font-family: 'Droid Sans', sans-serif;
     -webkit-transition-duration: 0.5s;
 }
 .m_nav_item a:hover {
     color: tomato;
 }
+
+
 /*classes for jQuery function*/
 
 .container_open {
@@ -103,7 +116,7 @@ background-size: cover;*/
     height: 45px;
     position: fixed;
     background: rgba(0, 0, 0, 0);
-    top: 30px;
+    top: 10px;
     right: 5px;
     z-index: 3;
 }
@@ -112,7 +125,7 @@ background-size: cover;*/
 .m_nav_ham {
     width: 35px;
     height: 5px;
-    background: #fff;
+    background: #222;
     margin: 5px auto;
 }
 .m_nav_ham_1_open {
@@ -132,52 +145,106 @@ background-size: cover;*/
 .m_nav_ham_3_open {
     opacity: 0;
 }
-/*classes used to change the button's format based on jquery toggle
-In future releases this will be used to animate the m_nav_ham divs to form 
-an X*/
 
 .button_open {
-    background: #333;
-    /*	-webkit-transform: rotate(45deg);*/
+    background: #222;
 }
-.button_closed {}
 /*      Header
 ==============================*/
 
 #header {
     width: 100%;
     height: 700px;
-    /*background-image: url('../yosemite.jpg');
-	background-size: cover;*/
-    /*	background: #4787ff*/
+    background-image: url('../yosemite.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    top: 0px;
     float: left;
     text-align: center;
-    margin-top: 0px;
 }
 /*#header*/
 
-h1 {
-    font-weight: 300;
-    font-size: 6rem;
-    color: white;
-    padding-top: 80px;
+#header h1 {
+    font-family: 'Satisfy', cursive;
+    font-variant: small-caps;
+    color: #fff;
+    margin-top: 260px;
+    font-size: 3rem;
+  
+    
 }
 /*      Sections
 ==============================*/
 
 .main_sections {
     width: 100%;
-    height: 1100px;
+    height: 800px;
     text-align: center;
     margin-top: 0px;
     float: left;
+    position: relative;
 }
 /*      Section 1
 ==============================*/
 
 #section_1 {
-    background-color: #df32df;
+    background: lightblue;
 }
+
+#sub_container{
+    background: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    bottom: 0px;
+    display: -webkit-flex;
+    display: flex;
+     -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-justify-content: space-around;
+    justify-content:space-around;
+
+}
+
+.sub_section{
+       -webkit-flex: 1 auto;
+    flex: 1 auto;
+    background: #fff;
+    opacity: 1;
+}
+
+#sub_section_1{
+    background: tomato;
+
+}
+
+#sub_section_2{
+    background: green;
+}
+
+#sub_section_3{
+    background: black;
+}
+
+
+#date_shape{
+    
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    opacity: 0.8;
+    margin: 50px auto;
+}
+
+#date {
+    color: #333;
+    font-size: 3rem;
+    font-family: 'Satisfy', cursive;
+
+}
+
+
+
 /*      Section 2
 ==============================*/
 
@@ -214,15 +281,16 @@ h1 {
     /*Nav bar media queries!*/
     #m_nav_container {
         text-align: left;
-        height: 120px !important;
+        height: 80px;
     }
     .m_nav_item {
-        display: inline;
-        line-height: 100px;
+        display: inline-block;
+        top: 50%;
+/*        line-height: 100px;*/
         margin-right: 50px;
     }
     .m_nav_item a {
-        margin-top: 10px;
+    /*    margin-top: 10px;*/
         font-size: 1.2em;
     }
     #m_nav_item_1 {
@@ -234,33 +302,56 @@ h1 {
     }
 
     #m_nav_menu{
-        right: 40px;
+        right: 5%;
     }
 
     /*wrapper media queries*/
     .open_wrapper {
-        top: 130px !important;
+        top: 80px !important;
     }
+
+    #header{
+        text-align: right;
+    }
+
+    #header h1 {
+    font-family: 'Satisfy', cursive;
+    font-variant: small-caps;
+    font-size: 3.5rem;
+    margin-right: 30px;
+    color: #222;
+    
+}
+
+
+#sub_container{
+
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+
+}
+
+
 }
 /*Media query for larger, non-mobile devices*/
 
 @media screen and (min-width: 1150px) {
     #m_nav_container {
         text-align: center;
-        height: 110px !important;
+        height: 80px;
         /*	position: fixed;
 	top: 0;*/
         /*	z-index: 0 !important;*/
     }
 
 
-	#m_nav_menu {
+/*	#m_nav_menu {
     top: 15px;
 }
-
+*/
     .m_nav_item {
         display: inline;
-        line-height: 70px;
+      /*  line-height: 70px;*/
         margin-right: 80px;
         padding-bottom: 10px
     }
@@ -271,6 +362,10 @@ h1 {
     /*#toggle_m_nav{
 	display: none;
 }*/
+
+#header{
+        text-align: center;
+    }
 }
 /*
 Media query for mid-size non-mobile devices*/

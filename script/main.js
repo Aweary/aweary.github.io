@@ -69,7 +69,7 @@ var gotoByScroll = function() {
         // var $scrollToDiv = "$(" + "'" + $divID + "'" +")";
 
         $('html,body').animate({
-            scrollTop: $($(this).attr("href")).offset().top - 50
+            scrollTop: $($(this).attr("href")).offset().top - 68
         }, "slow");
 
     });
