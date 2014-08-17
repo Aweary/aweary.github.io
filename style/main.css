@@ -78,7 +78,7 @@ h1{
 }
 
 
-#nav_item {
+#nav_list {
 	list-style: none;
 }
 
@@ -100,6 +100,8 @@ h1{
 	-webkit-transform: translate3d(0px, 70px, 0px);
 
 }
+
+
 
 
 /*  Navigation Hamburger Icon
@@ -176,6 +178,41 @@ an X*/
 	-moz-transition-duration: 0.25s;
 	-ms-transition-duration: 0.25s;
 	transition-duration: 0.25s;
+
+}
+
+
+@media screen and (max-width: 740px){
+
+
+#nav_container{
+	position: fixed;
+	height: 2000px;
+	width: 200px !important;
+	left: -200px !important;
+
+
+	-webkit-transition-timing-function: ease-in-out;
+	-moz-transition-timing-function: ease-in-out;
+	-ms-transition-timing-function: ease-in-out;
+	transition-timing-function: ease-in-out;
+}
+
+
+#nav_list {
+	display: block;
+	margin: 0px auto;
+}
+
+
+#nav_list:first-child{
+	margin-top: 200px;
+}
+	
+	.expanded_nav {
+	-webkit-transform: translate3d(200px, 0px, 0px);
+
+}
 
 }
 
