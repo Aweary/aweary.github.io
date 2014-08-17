@@ -1,123 +1,119 @@
-/*========================================
-Default values are with a mobile-first perspective
-======================================
 
-Project: responsive mobile-first navigation bar;
-Author: Brandon Dail;
-Copyright: MIT;
-Max-usefullness: minimal;
 
-*/
+*{
 
-* {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    -webkit-transition-duration: 0.4s;
-    -moz-transition-duration: 0.4s;
-    -ms-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-}
-html, body {
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-}
-
-h1 {
-    font-weight: 300;
-    font-size: 2rem;
-    color: white;
-    
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: Roboto, serif;
+	font-weight: 100;
 }
 
 
-p {
-    color: white;
-    font-weight: 300;
-    size: 1.1em;
-    display: block;
-    width: 70%;
-    margin: auto;
-    text-align: justify;
+html, 
+body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+
 }
-/*           Wrapper
-==============================*/
+
+
+h1{
+	
+	font-family: Satisfy, serif;
+	color: #333;
+	font-size: 8rem;
+	margin-top: 150px;
+
+}
+
 
 #wrapper {
-    /*background-image: url('../yosemite.jpg');
-background-size: cover;*/
-    background: tomato;
-    position: relative;
-    top: 0px;
-    max-width: 100%;
-    height: 100%;
-    margin: 0px auto;
-    text-align: center;
-}
-/*classes used to push the wrapper down when the navbar is expanded
-*/
+	
+	position: relative;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 2000px;
+	background-image: url('../img/yosemite.jpg');
+	background-size: cover;
+	background-attachment: fixed;
 
-.open_wrapper {
-    top: 180px !important;
-}
-.closed_wrapper {
-    top: 0px !important;
-}
-/*      Navigation Bar
-==============================*/
 
-#m_nav_container {
-    width: 100%;
-    height: 200px;
-    background-color: #333;
-    position: fixed;
-    display: none;
-    /*	opacity: 0;*/
-    top: 0px;
-}
-#m_nav_bar {
-    width: 80%;
-    margin: auto;
-}
-#m_nav_list {
-    list-style: none;
-}
-.m_nav_item {
-    margin-top: 15px;
-
-}
-.m_nav_item a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.0em;
-    font-family: 'Droid Sans', sans-serif;
-    -webkit-transition-duration: 0.5s;
-}
-.m_nav_item a:hover {
-    color: tomato;
 }
 
 
-/*classes for jQuery function*/
+#main_container {
+	max-width: 1200px;
+	height: 2000px;
+	margin: 0px auto;
+	background: rgba(0, 0, 0, 0);
+	position: relative;
 
-.container_open {
-    position: fixed !important;
-    display: block;
-    height: 120px;
 }
+
+
+
+/*navigation*/
+
+#nav_container{
+	position: fixed;
+	height: 70px;
+	top: -70px;
+	background: #333;
+	overflow: hidden;
+	text-align: center;
+	-webkit-transition-duration: 0.25s;
+	-moz-transition-duration: 0.25s;
+	-ms-transition-duration: 0.25s;
+	transition-duration: 0.25s;
+
+	-webkit-transition-timing-function: cubic-bezier(0, 1.8, 1, 1.8);
+	-moz-transition-timing-function: cubic-bezier(0, 1.8, 1, 1.8);
+	-ms-transition-timing-function: cubic-bezier(0, 1.8, 1, 1.8);
+	transition-timing-function: cubic-bezier(0, 1.8, 1, 1.8);
+
+}
+
+
+#nav_item {
+	list-style: none;
+}
+
+
+.nav_item {
+	display: inline-block;
+	margin: 0px auto;
+}
+
+.nav_item a{
+	display: block;
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+
+}
+
+.expanded_nav {
+	-webkit-transform: translate3d(0px, 70px, 0px);
+
+}
+
+
 /*  Navigation Hamburger Icon
 ==============================*/
 
 /*icon container*/
 
-#m_nav_menu {
+#menu_button{
     width: 45px;
     height: 45px;
     position: fixed;
     background: rgba(0, 0, 0, 0);
-    top: 10px;
-    right: 5px;
+    top: 20px;
+    right: 35px;
     z-index: 3;
 }
 /*class applied to create the lines*/
@@ -125,7 +121,7 @@ background-size: cover;*/
 .m_nav_ham {
     width: 35px;
     height: 5px;
-    background: #222;
+    background: #fff;
     margin: 5px auto;
 }
 .m_nav_ham_1_open {
@@ -145,227 +141,53 @@ background-size: cover;*/
 .m_nav_ham_3_open {
     opacity: 0;
 }
+/*classes used to change the button's format based on jquery toggle
+In future releases this will be used to animate the m_nav_ham divs to form 
+an X*/
 
 .button_open {
-    background: #222;
+    background: #333;
+    /*	-webkit-transform: rotate(45deg);*/
 }
+.button_closed {}
 /*      Header
 ==============================*/
 
-#header {
-    width: 100%;
-    height: 700px;
-    background-image: url('../yosemite.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    top: 0px;
-    float: left;
-    text-align: center;
-}
-/*#header*/
 
-#header h1 {
-    font-family: 'Satisfy', cursive;
-    font-variant: small-caps;
-    color: #fff;
-    margin-top: 260px;
-    font-size: 3rem;
-  
-    
-}
-/*      Sections
-==============================*/
-
-.main_sections {
-    width: 100%;
-    height: 800px;
-    text-align: center;
-    margin-top: 0px;
-    float: left;
-    position: relative;
-}
-/*      Section 1
-==============================*/
-
-#section_1 {
-    background: lightblue;
-}
-
-#sub_container{
-    background: rgba(0, 0, 0, 0);
-    width: 100%;
-    height: 400px;
-    position: absolute;
-    bottom: 0px;
-    display: -webkit-flex;
-    display: flex;
-     -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
-    -webkit-justify-content: space-around;
-    justify-content:space-around;
-
-}
-
-.sub_section{
-       -webkit-flex: 1 auto;
-    flex: 1 auto;
-    background: #fff;
-    opacity: 1;
-}
-
-#sub_section_1{
-    background: tomato;
-
-}
-
-#sub_section_2{
-    background: green;
-}
-
-#sub_section_3{
-    background: black;
-}
-
-
-#date_shape{
-    
-    width: 100%;
-    height: 100px;
-    background: #fff;
-    opacity: 0.8;
-    margin: 50px auto;
-}
-
-#date {
-    color: #333;
-    font-size: 3rem;
-    font-family: 'Satisfy', cursive;
+#header_container{
+	float: left;
+	width: 100%;
+	height: 500px;
+	margin-top: 200px;
+	background: rgba(240, 240, 240, 0.2);
+	text-align: center;
 
 }
 
 
 
-/*      Section 2
-==============================*/
 
-#section_2 {
-    background-color: #47e3ff;
-}
-/*      Section 3
-==============================*/
-
-#section_3 {
-    background-color: #47ffbf;
-}
-#section_3 p, #section_3 h1 {
-    color: #333 !important;
-}
-/*      Section 4
-==============================*/
-
-#section_4 {
-    background-color: #6347ff;
-}
-/*      Section 5
-==============================*/
-
-#section_5 {
-    background-color: #ffbf47;
-}
-/*      Media Queries
-==============================*/
-
-/*Media query for all non-mobile devices*/
-
-@media screen and (min-width: 780px) {
-    /*Nav bar media queries!*/
-    #m_nav_container {
-        text-align: left;
-        height: 80px;
-    }
-    .m_nav_item {
-        display: inline-block;
-        top: 50%;
-/*        line-height: 100px;*/
-        margin-right: 50px;
-    }
-    .m_nav_item a {
-    /*    margin-top: 10px;*/
-        font-size: 1.2em;
-    }
-    #m_nav_item_1 {
-        margin-left: 5px;
-    }
-    #m_nav_menu:before {
-        content: "MENU";
-        color: white;
-    }
-
-    #m_nav_menu{
-        right: 5%;
-    }
-
-    /*wrapper media queries*/
-    .open_wrapper {
-        top: 80px !important;
-    }
-
-    #header{
-        text-align: right;
-    }
-
-    #header h1 {
-    font-family: 'Satisfy', cursive;
-    font-variant: small-caps;
-    font-size: 3.5rem;
-    margin-right: 30px;
-    color: #222;
-    
-}
+/*Animations*/
 
 
-#sub_container{
+.animate{
 
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
+	-webkit-transition-duration: 0.25s;
+	-moz-transition-duration: 0.25s;
+	-ms-transition-duration: 0.25s;
+	transition-duration: 0.25s;
 
 }
 
 
-}
-/*Media query for larger, non-mobile devices*/
-
-@media screen and (min-width: 1150px) {
-    #m_nav_container {
-        text-align: center;
-        height: 80px;
-        /*	position: fixed;
-	top: 0;*/
-        /*	z-index: 0 !important;*/
-    }
 
 
-/*	#m_nav_menu {
-    top: 15px;
-}
-*/
-    .m_nav_item {
-        display: inline;
-      /*  line-height: 70px;*/
-        margin-right: 80px;
-        padding-bottom: 10px
-    }
-    .m_nav_item a {
-        margin-top: 10px;
-        font-size: 1.5em;
-    }
-    /*#toggle_m_nav{
-	display: none;
-}*/
 
-#header{
-        text-align: center;
-    }
-}
-/*
-Media query for mid-size non-mobile devices*/
+
+
+
+
+
+
+
+

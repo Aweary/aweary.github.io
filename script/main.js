@@ -1,8 +1,7 @@
 $(document).ready(function() {
 
     toggle_nav_container();
-    gotoByScroll();
-
+    fixMenuButton();
 
 });
 
@@ -12,43 +11,19 @@ var toggle_nav_container = function() {
 
 
 
-    var $toggleButton = $('#toggle_m_nav');
-    $navContainer = $('#m_nav_container');
-    $menuButton = $('#m_nav_menu')
+    var $toggleButton = $('#menu_button_container');
+    $nav = $('#nav_container');
+    $menuButton = $('#menu_button')
     $menuButtonBars = $('.m_nav_ham');
-    $wrapper = $('#wrapper');
+    $wrapper = $('#main_container');
+
 
     // toggle the container on click of button (can be remapped to $menuButton)
 
     $toggleButton.on("click", function() {
 
-        // declare a local variable for the window width
-        var $viewportWidth = $(window).width();
+        $nav.toggleClass('expanded_nav');
 
-        // if statement to determine whether the nav container is already toggled or not
-
-        if ($navContainer.is(':hidden')) {
-            $wrapper.removeClass('closed_wrapper');
-            $wrapper.addClass("open_wrapper");
-            $navContainer.slideDown(200).addClass('container_open').css("z-index", "2");
-            // $(window).scrollTop(0);
-            $menuButtonBars.removeClass('button_closed');
-            $menuButtonBars.addClass('button_open');
-            $("#m_ham_1").addClass("m_nav_ham_1_open");
-            $("#m_ham_2").addClass("m_nav_ham_2_open");
-            $("#m_ham_3").addClass("m_nav_ham_3_open");
-
-        } else {
-            $navContainer.css("z-index", "0").removeClass('container_open').slideUp(200)
-            $menuButtonBars.removeClass('button_open')
-            $menuButtonBars.addClass('button_closed')
-            $wrapper.removeClass('open_wrapper')
-            $wrapper.addClass("closed_wrapper")
-            $("#m_ham_1").removeClass("m_nav_ham_1_open");
-            $("#m_ham_2").removeClass("m_nav_ham_2_open");
-            $("#m_ham_3").removeClass("m_nav_ham_3_open");
-
-        }
     });
 
 
@@ -56,25 +31,42 @@ var toggle_nav_container = function() {
 }
 
 
-// Function that takes the href value of links in the navbar and then scrolls 
-//the div on the page whose ID matches said value. This only works if you use 
-//a consistent naming scheme for the navbar anchors and div IDs
+// // Function that takes the href value of links in the navbar and then scrolls 
+// //the div on the page whose ID matches said value. This only works if you use 
+// //a consistent naming scheme for the navbar anchors and div IDs
 
-var gotoByScroll = function() {
+// var gotoByScroll = function() {
 
-    $(".m_nav_item a").on("click", function(e) {
+//     $(".m_nav_item a").on("click", function(e) {
 
-        e.preventDefault();
-        // var $divID =$(this).attr("href");
-        // var $scrollToDiv = "$(" + "'" + $divID + "'" +")";
+//         e.preventDefault();
+//         // var $divID =$(this).attr("href");
+//         // var $scrollToDiv = "$(" + "'" + $divID + "'" +")";
 
-        $('html,body').animate({
-            scrollTop: $($(this).attr("href")).offset().top - 68
-        }, "slow");
+//         $('html,body').animate({
+//             scrollTop: $($(this).attr("href")).offset().top - 50
+//         }, "slow");
 
-    });
+//     });
+
+
+
+
+// }
+
+
+var fixMenuButton = function () {
+
+$(window).on('load resize scroll', function() {
+var $buffer = $wrapper.offset();
+$menuButton.css('right', $buffer.left + 35);
+$nav.css('width', $wrapper.width());
+$nav.css('left', $buffer.left).css('right', $buffer.right);
+
+});
 
 
 
 
 }
+
