@@ -2,10 +2,13 @@ $(document).ready(function() {
 
     toggle_nav_container();
     fixMenuButton();
+    gotoByScroll();
 
 });
 
-
+$('#shape').click(function(){
+    $(this).toggleClass('rotate_animation');
+});
 
 var toggle_nav_container = function() {
 
@@ -35,30 +38,35 @@ var toggle_nav_container = function() {
 // //the div on the page whose ID matches said value. This only works if you use 
 // //a consistent naming scheme for the navbar anchors and div IDs
 
-// var gotoByScroll = function() {
+var gotoByScroll = function() {
 
-//     $(".m_nav_item a").on("click", function(e) {
+    $(".nav_item a").on("click", function(e) {
 
-//         e.preventDefault();
-//         // var $divID =$(this).attr("href");
-//         // var $scrollToDiv = "$(" + "'" + $divID + "'" +")";
+        e.preventDefault();
+        // var $divID =$(this).attr("href");
+        // var $scrollToDiv = "$(" + "'" + $divID + "'" +")";
 
-//         $('html,body').animate({
-//             scrollTop: $($(this).attr("href")).offset().top - 50
-//         }, "slow");
+        $('html,body').animate({
+            scrollTop: $($(this).attr("href")).offset().top - 50
+        }, "slow");
 
-//     });
-
-
+    });
 
 
-// }
+
+
+}
 
 
 var fixMenuButton = function () {
+    var $toggleButton = $('#menu_button_container');
+    $nav = $('#nav_container');
+    $menuButton = $('#menu_button')
+    $menuButtonBars = $('.m_nav_ham');
+    $wrapper = $('#main_container');
 
-$(window).on('load resize scroll', function() {
-var $buffer = $wrapper.offset();
+$(window).on('load resize', function() {
+var $buffer = $wrapper.offset()
 $menuButton.css('right', $buffer.left + 35);
 $nav.css('width', $wrapper.width());
 $nav.css('left', $buffer.left).css('right', $buffer.right);
