@@ -26,6 +26,13 @@ var toggle_nav_container = function() {
     $toggleButton.on("click", function() {
 
         $nav.toggleClass('expanded_nav');
+        $('#circle').toggleClass('rotate');
+
+        $("#m_ham_1").toggleClass("m_nav_ham_1_open");
+        $("#m_ham_2").toggleClass("m_nav_ham_2_open");
+        $("#m_ham_3").toggleClass("m_nav_ham_3_open");
+        $menuButtonBars.toggleClass("button_open");
+
 
     });
 
@@ -40,18 +47,18 @@ var toggle_nav_container = function() {
 
 var gotoByScroll = function() {
 
-    $(".nav_item a").on("click", function(e) {
+    $(".nav_item_link").on("click", function(evt) {
 
-        e.preventDefault();
+        evt.preventDefault();
+        console.log($($(this).attr("href")).offset().top);
         // var $divID =$(this).attr("href");
         // var $scrollToDiv = "$(" + "'" + $divID + "'" +")";
 
-        $('html,body').animate({
+        $('html, body').animate({
             scrollTop: $($(this).attr("href")).offset().top - 50
         }, "slow");
 
     });
-
 
 
 
