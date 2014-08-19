@@ -42,7 +42,6 @@ var toggle_nav_container = function() {
     });
 
 
-
 }
 
 
@@ -55,10 +54,11 @@ var gotoByScroll = function() {
     $(".nav_item_link").on("click", function(evt) {
 
         evt.preventDefault();
-        console.log($($(this).attr("href")).offset().top);
-        // var $divID =$(this).attr("href");
-        // var $scrollToDiv = "$(" + "'" + $divID + "'" +")";
-
+        $nav.toggleClass('expanded_nav');
+        $("#m_ham_1").toggleClass("m_nav_ham_1_open");
+        $("#m_ham_2").toggleClass("m_nav_ham_2_open");
+        $("#m_ham_3").toggleClass("m_nav_ham_3_open");
+        $menuButtonBars.toggleClass("button_open");
         $('html, body').animate({
             scrollTop: $($(this).attr("href")).offset().top - 50
         }, "slow");
