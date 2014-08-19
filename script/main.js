@@ -4,11 +4,16 @@ $(document).ready(function() {
     fixMenuButton();
     gotoByScroll();
 
+$(window).bind("scroll", function() {
+    if ($(this).scrollTop() > 520) {
+        $("#subOverlay").fadeIn();
+    } else {
+        $("#subOverlay").stop().fadeOut();
+    }
 });
 
-$('#shape').click(function(){
-    $(this).toggleClass('rotate_animation');
 });
+
 
 var toggle_nav_container = function() {
 
@@ -27,7 +32,7 @@ var toggle_nav_container = function() {
 
         $nav.toggleClass('expanded_nav');
         $('#circle').toggleClass('rotate');
-
+        $('#circle_front').delay(500).fadeToggle('slow');
         $("#m_ham_1").toggleClass("m_nav_ham_1_open");
         $("#m_ham_2").toggleClass("m_nav_ham_2_open");
         $("#m_ham_3").toggleClass("m_nav_ham_3_open");
@@ -74,7 +79,7 @@ var fixMenuButton = function () {
 
 $(window).on('load resize', function() {
 var $buffer = $wrapper.offset()
-$menuButton.css('right', $buffer.left + 35);
+$menuButton.css('right', $buffer.left + 15);
 $nav.css('width', $wrapper.width());
 $nav.css('left', $buffer.left).css('right', $buffer.right);
 

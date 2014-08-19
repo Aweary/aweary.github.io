@@ -13,12 +13,19 @@ Normalized with normalize.css
 
 
 # 1: GLOBAL 
+
 # 2: CONTAINER
+
 # 3: NAVIGATION 
+
 # 4. HEADER
+
 # 5: SECTION(S)
+
 # 6: BUTTONS / FIELDS
+
 # 7: KEYFRAMES + ANIMATION CLASSES
+
 # 8: MEDIA QUERIES
 */
 
@@ -64,6 +71,7 @@ Normalized with normalize.css
 	box-sizing: border-box;
 	font-family: 'Open Sans Condensed', serif;
 	font-weight: 100;
+
 }
 
 
@@ -71,9 +79,6 @@ Normalized with normalize.css
 h1{
 	
 	font-family: Satisfy, serif;
-	color: #fff;
-	font-size: 8rem;
-
 }
 
 
@@ -114,7 +119,7 @@ p {
 	right: 0;
 	width: 100%;
 	height: 100%;
-	overflow: auto;
+	overflow-x: hidden;
 
 
 }
@@ -122,7 +127,7 @@ p {
 
 #main_container {
 	max-width: 1400px;
-	height: 2000px;
+	height: 100%;
 	margin: 0px auto;
 	background: rgba(0, 0, 0, 0);
 	position: relative;
@@ -161,8 +166,8 @@ p {
 
 #nav_container{
 	position: fixed;
-	height: 70px;
-	top: -90px;
+	height: 260px;
+	top: -260px;
 	width: 100%;
 	background: #333;
 	overflow: hidden;
@@ -182,27 +187,25 @@ p {
 
 
 .nav_item {
-	display: inline-block;
-	margin: 0px auto;
+	display: block;
+	width: 100%;
 }
 
 .nav_item_link{
 
 	display: block;
-	padding: 1em;
+	padding: 0.5em;
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 1.1em;
+	font-size: 1.2em;
 	font-variant: small-caps;
-	margin-right: 2em;
 	margin-top: 0.2em;
-	width: 6em;
+	width: 100%;
 	color: white;
 	text-decoration: none;
 }
 
 .nav_item_link:hover{
 	background: #555;
-	border-radius: 10px;
 }
 
 /*icon container*/
@@ -213,7 +216,7 @@ p {
     position: fixed;
     background: rgba(0, 0, 0, 0);
     top: 20px;
-    right: 35px;
+  /*  right: 35px;*/
     z-index: 15;
 }
 /*class applied to create the lines*/
@@ -267,13 +270,12 @@ p {
 #header_container{
 	float: left;
 	width: 100%;
-	height: 1200px;
+	height: 800px;
 	margin-top: 0px;
 	background-image: url('../img/yosemite_lo-res.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-/*	background: #d5eef3;*/
 	text-align: center;
 
 }
@@ -282,20 +284,22 @@ p {
 
 #header_title {
 	padding: 10px;
-	color: #333;
-	margin-top: 300px;
-	text-shadow: 6px 4px 0px rgba(160, 160, 160, 0.7);
-	background: rgba(0, 0, 0, 0.02);
+	color: #fff;
+	font-size: 4rem;
+	margin-top: 243px;
+	/*text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);*/
+	/*background: rgba(255, 255, 255, 0.9);*/
 
 }
 
 
 
 #circle_container { 
+	display: none;
   width: 350px;
   height: 350px;
   position: relative;
-  margin: 0px auto;
+  margin: 250px auto;
   perspective: 800px;
 }
 
@@ -323,6 +327,9 @@ p {
 #circle_front {
 	
 	background: #fff;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+
 
 }
 
@@ -330,8 +337,21 @@ p {
 #circle_back {
 
 	background: #333;
+		-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 	-webkit-transform: rotateY( 180deg );
 }
+
+
+#circle_back h2 {
+
+	margin-top: 50px;
+	color: #fff;
+	font-size: 4em !important;
+	font-variant: small-caps;
+}
+
+
 
 #header_circle_div h2 {
 	font-size: 2em;
@@ -387,7 +407,40 @@ p {
 	height: 1100px;
 	background: #f1c8cb;
 	text-align: center;
+	overflow: hidden;
 }
+
+.section_title {
+	
+	font-size: 4em;
+	color: white;
+
+}
+
+.sub_section
+
+{
+
+	text-align: justify;
+}
+
+
+
+.sub_section_right  {
+
+	width: 90%;
+	padding: 30px;
+	text-align: justify;
+}
+
+.sub_section_left 	{
+	display: none;
+	/*float: left;*/	
+	text-align: justify;
+	margin-right: 20px;
+	height: 600px;
+}
+
 
 /* - - - - - - - - - - - - - - - - - - -  /
 
@@ -414,48 +467,78 @@ p {
 /* - - - - - - - - - - - - - - - - - - -  */
 
 
-.location_sub_section
 
-{
-	margin-top: 0px;
-
-}
-
-#location_right {
-
-	text-align: justify;
-	float: right;
-	font-style: 1.2em;
-	right: 30px;
-	padding-bottom: 50px;
-	padding-right: 50px;
-}
-
-#location_left {
-
-	text-align: justify;
-	float: left;
-	font-style: 1.2em;
-	margin-right: 20px;
-	height: 600px;
-}
-
-#location_left img {
+#yosemite_logo_1 {
 
 	width: 560px;
-	margin-left: 110px;
+
+}
+
+#yosemite_logo_2 {
+
+	display: none;
+
+}
+
+/*#l_subsection_left {
+	max-width: 50%;
+	padding: 1%;
+}
+
+#l_subsection_right {
+	max-width: 50%;
+}*/
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - -  /
+
+	#DATE_DIV
+
+/* - - - - - - - - - - - - - - - - - - -  */
+
+#date {
+	
+	background: #333;
+	color: #fff !important;
+}
+
+#date_title {
+	color: #fff;
+	margin-bottom: 0.3em !important;
+
 }
 
 
+/* - - - - - - - - - - - - - - - - - - -  /
+
+	#SUB_SECTION(S) FOR DATE DIV
+
+/* - - - - - - - - - - - - - - - - - - -  */
 
 
+.d_sub_section{
+	
+	margin-top: 2%;
 
+}
 
+#d_subsection_left {
+	width: 650px;
+}
 
+#d_subsection_left h3 {
+	font-size: 2.3em;
+	padding-top: 5.4%;
+	margin-left: 15%;
 
+}
 
+#d_subsection_left h3:hover {
+	color: lightblue;
 
-
+}
 
 
 
@@ -497,6 +580,19 @@ p {
 	-moz-transition-timing-function: ease-in-out;
 	-ms-transition-timing-function: ease-in-out;
 	transition-timing-function: ease-in-out;
+
+}
+
+.animate_med_bounce{
+
+	webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-ms-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	-webkit-transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
+	-moz-transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
+	-ms-transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
+	transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
 
 }
 
@@ -550,11 +646,11 @@ p {
 /*Animation for toggling the navigation bar*/
 
 .expanded_nav {
-	-webkit-transform: translate3d(0px, 90px, 0px);
-	-moz-transform: translate3d(0px, 90px, 0px);
-	-ms-transform: translate3d(0px, 90px, 0px);
-	-o-transform: translate3d(0px, 90px, 0px);
-	-webkit-transform: translate3d(0px, 90px, 0px);
+	-webkit-transform: translate3d(0px, 260px, 0px);
+	-moz-transform: translate3d(0px, 260px, 0px);
+	-ms-transform: translate3d(0px, 260px, 0px);
+	-o-transform: translate3d(0px, 260px, 0px);
+	transform: translate3d(0px, 260px, 0px);
 
 }
 
@@ -596,21 +692,16 @@ p {
 
 
 
+/*# # # SECTION 8: MEDIA QUERIES # # # */
 
 
 
-
-
-@media screen and (max-width: 740px){
-
+/*mama-bear*/
+@media screen and (max-width: 1250px){
 
 
 
 }
-
-
-
-
 
 
 
