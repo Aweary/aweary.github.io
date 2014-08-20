@@ -4,13 +4,6 @@ $(document).ready(function() {
     fixMenuButton();
     gotoByScroll();
 
-$(window).bind("scroll", function() {
-    if ($(this).scrollTop() > 520) {
-        $("#subOverlay").fadeIn();
-    } else {
-        $("#subOverlay").stop().fadeOut();
-    }
-});
 
 });
 
@@ -25,6 +18,7 @@ var toggle_nav_container = function() {
     $menuButtonBars = $('.m_nav_ham');
     $wrapper = $('#main_container');
 
+     $('#nav_list').fadeOut( "slow", "linear" )
 
     // toggle the container on click of button (can be remapped to $menuButton)
 
@@ -32,6 +26,7 @@ var toggle_nav_container = function() {
 
         $nav.toggleClass('expanded_nav');
         $('#circle').toggleClass('rotate');
+        $('#nav_list').delay(200).fadeToggle( "slow", "linear" )
         $('#circle_front').delay(500).fadeToggle('slow');
         $("#m_ham_1").toggleClass("m_nav_ham_1_open");
         $("#m_ham_2").toggleClass("m_nav_ham_2_open");
@@ -55,12 +50,13 @@ var gotoByScroll = function() {
 
         evt.preventDefault();
         $nav.toggleClass('expanded_nav');
+        $('#nav_list').fadeToggle('slow');
         $("#m_ham_1").toggleClass("m_nav_ham_1_open");
         $("#m_ham_2").toggleClass("m_nav_ham_2_open");
         $("#m_ham_3").toggleClass("m_nav_ham_3_open");
         $menuButtonBars.toggleClass("button_open");
         $('html, body').animate({
-            scrollTop: $($(this).attr("href")).offset().top - 50
+            scrollTop: $($(this).attr("href")).offset().top
         }, "slow");
 
     });

@@ -166,8 +166,8 @@ p {
 
 #nav_container{
 	position: fixed;
-	height: 260px;
-	top: -260px;
+	height: 290px;
+	top: -290px;
 	width: 100%;
 	background: #333;
 	overflow: hidden;
@@ -180,7 +180,7 @@ p {
 #nav_list {
 	list-style: none;
 	padding: 0px;
-	margin: 0px;
+	margin: 35px auto;
 	width: 100%;
 	height: 100%;
 }
@@ -202,6 +202,7 @@ p {
 	width: 100%;
 	color: white;
 	text-decoration: none;
+
 }
 
 .nav_item_link:hover{
@@ -583,18 +584,6 @@ p {
 
 }
 
-.animate_med_bounce{
-
-	webkit-transition-duration: 0.5s;
-	-moz-transition-duration: 0.5s;
-	-ms-transition-duration: 0.5s;
-	transition-duration: 0.5s;
-	-webkit-transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
-	-moz-transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
-	-ms-transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
-	transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
-
-}
 
 .animate_fast_ease-in-out{
 
@@ -610,6 +599,47 @@ p {
 }
 
 
+.animate_slow_bounce{
+
+	webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+	-webkit-transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
+	-moz-transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
+	-ms-transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
+	transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
+
+}
+
+
+.animate_med_bounce{
+
+	webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-ms-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	-webkit-transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
+	-moz-transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
+	-ms-transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
+	transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
+
+}
+
+
+
+.animate_fast_bounce{
+
+	webkit-transition-duration: 0.25s;
+	-moz-transition-duration: 0.25s;
+	-ms-transition-duration: 0.25s;
+	transition-duration: 0.25s;
+	-webkit-transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
+	-moz-transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
+	-ms-transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
+	transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
+
+}
 
 /*Hamburger navigation icon open/close animation for mobile site*/
 
