@@ -63,6 +63,13 @@ Normalized with normalize.css
 	attributes used across all pages and sections*/
 
 
+body {
+	
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+
+}
+
 
 *{
 
@@ -273,11 +280,10 @@ p {
 	width: 100%;
 	height: 800px;
 	margin-top: 0px;
-	background-image: url('../img/yosemite_lo-res.jpg');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+	 background: url('../img/yosemite_lo-res.jpg') no-repeat center center fixed;
 	background-size: cover;
 	text-align: center;
+	overflow: hidden;
 
 }
 
