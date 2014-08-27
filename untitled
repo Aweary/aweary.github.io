@@ -1,0 +1,85 @@
+
+tags: trig, radian, degree, reference angle, quadrants, 4-term polynominal
+
+
+*Reviewed the six Trig functions
+
+
+
+I > Definition of Six Trig Functions
+
+	Sin = y / r
+	Cos = x / r
+	Tan = y / x
+
+	Csc = r / y
+	Sec = r / x
+	Cot = x / y
+
+
+II > Sign of Trug Functions
+
+
+	Defining sign of sin/cos/tan in quadrants
+	Quad I - All (all of them)
+	Quad II - Students (sin is positive)
+	Quad III - Take (tan is positive)
+	Quad IV - Calculus (cos is positive)
+
+
+
+
+III > Special Value of Trig Between 0:90 DEG
+
+Review conversion of degrees/radians
+
+
+DEG 	0	30		45		60		90
+RAD 	0	π/6 	π/4 	π/3 	π/2
+# # # # # # # # # # # # # # # # # # 
+
+SIN 	0	1/2		Sq2/2	Sq3/2	1
+
+COS 	1	Sq3/2	Sq2/2	1/2		0	
+
+TAN 	0	Sq3/3 	1		Sq3		NaN
+
+
+
+IV > Reference Angle
+
+
+Review this !important.
+
+
+V > Graph of Trig Functions
+
+
+	Even functions: equal from point of origin
+	Odd functions: opposite from point of origin
+
+
+
+VI > Identities 
+
+
+	Review this !important.
+
+	sin(-x) = -sin x;
+	cos(-x) = cos x;
+	tan(-x) = -tan x;
+	tanø = sinø / cosø -- cotø = cosø / sinø;
+
+VII > Factoring
+
+	Review GCF and LCM
+	4-term polynominal
+	Trinomial
+		Cross multiplication table
+	Binominal
+		a^2 + b^2 - prime
+		a^2 - b^2 = (a+b)(a - b)
+		a^3 + b^3 = (a+b)(a^2 - ab + b^2)
+		a^3 - b^3 = (a-b)(a^2+ ab + b^2)
+
+
