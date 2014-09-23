@@ -1,0 +1,34 @@
+
+<div class="contact-container">
+
+
+<div ng-controller='eventController' class="form-container">
+
+	<h2 class="fancy-title">Have any questions?</h2>
+<br>
+<p>If so, please don't hesitate to contact us using the form
+on this page. While we're both pretty busy working and preparing for the wedding
+we still want to make sure its a smooth process for everyone involved.</p>
+	
+
+	<form ng-submit="sendEmail()" action="" method="post" id="contact-form">
+		<label for="name">Your name, please</label>
+		<br>
+		<input ng-model="email.name"type="text" name="name" id="email-name">
+		<br>
+		<label for="name">Your email address</label>
+		<br>
+		<input ng-model="email.address" type="email" name="name" id="email-name">
+		<br>
+		<label for="message">Enter your message: </label>
+
+		<textarea  ng-model="email.message" name="message" id="message"></textarea>
+
+		<button class="btn-submit" type="submit" form="contact-form">Submit</button>
+
+</form>
+
+{{ emailSet }}
+</div>
+
+</div>

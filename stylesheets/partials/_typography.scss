@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+// Define h1 - h6 scale
+
+@for $i from 1 through 6 {
+	h#{$i} {
+		font-family: $default-font;
+		font-size: $max-font-size - 60% * $i;
+			}
+}
+
+
+.fancy-title {
+	font-family: $fancy-font !important;
+}
+
+// define paragraph format
+
+p {
+	font-family: $default-font;
+	font-size: $default-font-size;
+	line-height: $default-line-height;
+
+}
+
+
+
+

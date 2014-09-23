@@ -1,0 +1,28 @@
+$test-list: (brandon, 10px) (teri, 20px) (eli, 30px);
+
+@each $list in $test-list{
+	.div-for-#{nth($list, 1)} {
+		width: nth($list, 2);
+	}
+}
+
+
+// Functions, mixins, variables, globals
+
+@import 'partials/_variables.scss';
+@import 'partials/_mixins.scss';
+@import 'partials/_reset.scss';
+@import 'partials/_base.scss';
+
+
+// Specific styling
+
+
+@import 'partials/_typography.scss';
+@import 'partials/_navigation.scss';
+@import 'partials/_buttons.scss';
+@import 'partials/_sections.scss';
+@import 'partials/_forms.scss';
+@import 'partials/_landing.scss';
+@import 'partials/_event.scss';
+@import 'partials/_location.scss';

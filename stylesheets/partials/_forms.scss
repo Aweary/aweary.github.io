@@ -1,0 +1,65 @@
+.form-container {
+	max-width: 700px;
+	height: 100%;
+	margin-top: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0px;
+	right: 0px;
+	text-align: justify;
+	
+
+	p {
+		margin-bottom: 50px;
+	}
+
+	form {
+		
+		margin: 0 auto;
+		text-align: center;
+
+		label {
+			
+			font-size: $large-font-size;
+
+		}
+
+		input {
+			
+			width: 90%;
+			height: $navigation-height-default;
+			border-radius: none;
+			margin-bottom: 50px;
+			margin-top: 20px;
+			font-size: 1.2em;
+			background: $input-bg;
+			border: none;
+			text-align: center;
+		}
+
+
+		textarea {
+			width: 90%;
+			height: $navigation-height-default * 2;
+			margin-bottom: 50px;
+			margin-top: 20px;
+			border: none;
+			background: $input-bg;
+
+		}
+
+	}
+}
+
+
+.contact-container {
+	width: 100%;
+	height: 100%;
+	background: #333;
+	position: absolute;
+	overflow: hidden;
+
+	p, label, h2 {
+		color: white;
+	}
+}

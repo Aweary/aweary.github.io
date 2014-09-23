@@ -1,0 +1,23 @@
+
+
+body {
+	font-family: $default-font;
+	@include slow-transition;
+}
+
+#ng-view {
+	@include fill-page;
+	@include center;
+}
+
+
+.right {
+	float: right !important;
+}
+
+.left {
+	float: left !important;
+}
+
+
+

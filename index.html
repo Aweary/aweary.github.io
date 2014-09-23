@@ -1,281 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="en" ng-app="myApp">
 <head>
-    <meta charset="UTF-8">
-    <title>Brandon Dail</title>
-    <link rel="stylesheet" href="style/main.css">
+  <meta charset="utf-8">
+  <title>My AngularJS App</title>
 
-    <!--  <link rel="stylesheet" href="style/normalize.css"> -->
 
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="style/main.css">
-    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <!-- fonts! -->
 
-    <link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,400,500' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
 
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 
-<meta name="viewport" content="width=device-width, user-scalable=no">
+  <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+
+  <!-- customer stylesheets! -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="stylesheets/main.css"/>
+
+
 </head>
-
 <body>
-
-
-    <div id="wrapper">
-
-        <div id="main_container">
-
-
-            <!--           Menu button          -->
-
-
-            <div id="menu_button_container" class="animate_slow_ease-in-out" href="#">
-
-                <div id="menu_button">
-
-                    <div class="m_nav_ham animate_med_ease-in-out" id="m_ham_1"></div>
-                    <div class="m_nav_ham animate_med_ease-in-out" id="m_ham_2"></div>
-                    <div class="m_nav_ham animate_med_ease-in-out" id="m_ham_3"></div>
-
-                </div>
-            </div>
-
-            <!--           Navigation          -->
-
-            <div id="nav_container" class="animate_med_bounce">
-
-                <nav role="navigation">
-
-                    <ul id="nav_list">
-
-
-                        <li class="nav_item">
-                            <a class="nav_item_link animate_med_ease-in-out" href="#location">where</a>
-                        </li>
-
-
-                        <li class="nav_item">
-                            <a class="nav_item_link animate_med_ease-in-out" href="#date">when</a>
-
-                        </li>
-
-
-                        <li class="nav_item">
-                            <a class="nav_item_link animate_med_ease-in-out" href="#">resume</a>
-
-                        </li>
-
-
-                        <li class="nav_item">
-                            <a class="nav_item_link animate_med_ease-in-out" href="#">projects</a>
-
-                        </li>
-
-                        <li class="nav_item">
-                            <a class="nav_item_link animate_med_ease-in-out" href="#">contact</a>
-
-                        </li>
-
-                    </ul>
-
-
-
-                </nav>
-
-            </div>
-
-
-            <!--           Header          -->
-
-
-
-            <div id="header_container">
-                <h1 id="header_title">We're tying the knot.</h1>
-
-                <div class="animate_slow_ease-in-out" id="header_circle_div">
-
-                    <div id="circle_container">
-                        <div id="circle" class="animate_slow_ease-in-out">
-                            <div id="circle_front" class="circle_face">
-
-                                <h2>Yosemite National Park</h2>
-                                <span id="heart">&hearts;</span>
-                                <h3>Brandon Dail & Teri Yesh</h3>
-                                <h3>April 11th, 2015</h3>
-
-                            </div>
-
-
-                            <div id="circle_back" class="circle_face">
-
-                                <h2>X &infin; + &infin; x 64
-                                </h2>
-
-
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-
-
-
-            <!--           Location section          -->
-
-            <div class="main_section" id="location">
-
-                <h1 class="section_title" id="location_title">Yosemite National Park.</h1>
-
-
-                <div class="sub_section sub_section_right l_sub_section" id="l_subsection_right">
-                    <h2><b>Ceremony:</b>
-                    </h2>
-                    <p>The ceremony will be held at Yosemite Lower Falls. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro accusantium tempore deleniti incidunt pariatur aspernatur ipsum doloribus, hic commodi ad laborum, ab aut voluptatum corrupti blanditiis asperiores aliquam dolor amet.</p>
-
-                    <br>
-                    <h2><b>Reception:</b>
-                    </h2>
-                    <p>The ceremony will be held at Yosemite Lodge. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ratione fugiat .</p>
-                    <br>
-                    <h2><b>Sexy Time</b>
-                    </h2>
-                    <p>The sexy time will be held in our suite at the Yosemite Lodge. Invitation only.</p>
-                    <br>
-                    <h2><b>Extreme Fun-tacular Party Boat</b>
-                    </h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, id, a! Praesentium, soluta quaerat sint asperiores velit iure, magni, error tempora labore necessitatibus aspernatur impedit. Perferendis odio omnis, molestias consequatur.</p>
-                    <br>
- 
-
-
-                </div>
-
-                <div class="sub_section sub_section_left l_sub_section" id="l_subsection_left">
-                   
-                </div>
-
-
-            </div>
-
-
-
-            <div class="main_section" id="date">
-
-                <h1 class="section_title" id="date_title">April 11th, 2015</h1>
-
-
-                <div class="sub_section sub_section_right d_sub_section" id="d_subsection_right">
-
-                    <h2><b>Ceremony:</b>
-                    </h2>
-                    <p>The ceremony will be held at Yosemite Lower Falls.</p>
-
-                    <br>
-                    <h2><b>Reception:</b>
-                    </h2>
-                    <p>The ceremony will be held at Yosemite Lodge.</p>
-                    <br>
-                    <h2><b>Sexy Time</b>
-                    </h2>
-                    <p>The sexy time will be held in our suite at the Yosemite Lodge. Invitation only.</p>
-                    <br>
-                    <h2><b>Extreme Fun-tacular Party Boat</b>
-                    </h2>
-                    <p>Yeah, we won't have one of those, sorry.</p>
-                    <br>
-                    <h2><b>The Real Fun Part of the Wedding.</b>
-                    </h2>
-                    <p>This will be when all you fuckers leave us the hell alone and stop whining about the free food</p>
-
-
-                </div>
-
-                <div class="sub_section sub_section_left d_sub_section" id="d_subsection_left">
-                    <h3 class="animate_fast_ease-in-out">"Yosemite Park is a place of rest, a refuge from the roar and dust and weary, nervous, wasting work of the lowlands, in which one gains the advantages of both solitude and society. Nowhere will you find more company of a soothing peace-be-still kind."</h3>
-
-
-
-                </div>
-            </div>
-
-
-                 <div  style="background: teal !important" class="main_section" id="date">
-
-                <h1 class="section_title" id="date_title">April 11th, 2015</h1>
-
-
-                <div class="sub_section sub_section_right d_sub_section" id="d_subsection_right">
-
-                    <h2><b>Ceremony:</b>
-                    </h2>
-                    <p>The ceremony will be held at Yosemite Lower Falls.</p>
-
-                    <br>
-                    <h2><b>Reception:</b>
-                    </h2>
-                    <p>The ceremony will be held at Yosemite Lodge.</p>
-                    <br>
-                    <h2><b>Sexy Time</b>
-                    </h2>
-                    <p>The sexy time will be held in our suite at the Yosemite Lodge. Invitation only.</p>
-                    <br>
-                    <h2><b>Extreme Fun-tacular Party Boat</b>
-                    </h2>
-                    <p>Yeah, we won't have one of those, sorry.</p>
-                    <br>
-                    <h2><b>The Real Fun Part of the Wedding.</b>
-                    </h2>
-                    <p>This will be when all you fuckers leave us the hell alone and stop whining about the free food</p>
-
-
-                </div>
-
-                <div class="sub_section sub_section_left d_sub_section" id="d_subsection_left">
-                    <h3 class="animate_fast_ease-in-out">"Yosemite Park is a place of rest, a refuge from the roar and dust and weary, nervous, wasting work of the lowlands, in which one gains the advantages of both solitude and society. Nowhere will you find more company of a soothing peace-be-still kind."</h3>
-
-
-
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-            </div>
-            <!-- end main_container -->
-        </div>
-        <!-- end wrapper -->
-
-
-
-
-
-
-
-
-
-
-        <!-- Scripts! -->
-
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
-        <script type="text/javascript" src="script/main.js"></script>
-
-
+    <nav class="fixed navigation">
+
+      <ul class="nav-section-small right">
+            <a href="#/location">Location</a>
+      </ul>
+       <ul class="nav-section-small right">
+            <a href="#/event">Event</a>
+      </ul>
+
+      <ul class="nav-section-small right">
+          <a href="#/contact">Contact</a>
+      </ul>
+
+    </nav>
+
+  <div id="ng-view" ng-view>
+    
+
+</div>
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  -->
+
+   <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-route.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src='js/jquery.js'></script>
 </body>
-
 </html>

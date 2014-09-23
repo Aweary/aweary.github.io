@@ -1,0 +1,5 @@
+.cover-page {
+	@include fill-page;
+	background: $primary-light;
+	height: 2000px;
+}
