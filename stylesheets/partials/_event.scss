@@ -67,18 +67,38 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4cfef', end
 			color: white;
 			font-size: 1.1em;
 			padding: 8px;
+			-webkit-transition: all .3s ease-in-out;
 
-		}
+				&:hover{
+  			opacity: 0.9;
+  			-webkit-transform: scale(1.1);
+          transform: scale(1.1);
+          background: #444;
+
+				}
+
+			}
 	}
 
 
 }
 
 
-#yosemite-icon-1 {
-	width: 300px;
+.event-icons {
+	width: 280px;
 	margin-bottom: 20px;
+	-webkit-transition: all .3s ease-in-out;
+
+	&:hover{
+  opacity: 0.9;
+  -webkit-transform: scale(1.1) rotateZ(5deg);
+          transform: scale(1.1) rotateZ(5deg);
+
+
+
+	}
 }
+
 
 
 .icon-row {

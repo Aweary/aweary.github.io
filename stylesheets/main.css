@@ -105,7 +105,7 @@ p {
   line-height: 150%; }
 
 .navigation {
-  background-color: #333333;
+  background-color: #222222;
   color: white;
   font-family: "Oxygen", sans-serif;
   font-weight: 300;
@@ -174,19 +174,19 @@ p {
     -moz-transition-duration: 0.7s;
     transition-duration: 0.7s; }
   .navigation .darkest {
-    background: #333333; }
+    background: #222222; }
   .navigation .darker {
-    background: #595959; }
+    background: #484848; }
   .navigation .dark {
-    background: #666666; }
+    background: #555555; }
   .navigation .medium {
-    background: gray; }
+    background: #6f6f6f; }
   .navigation .light {
-    background: #999999; }
+    background: #888888; }
   .navigation .lighter {
-    background: #b3b3b3; }
+    background: #a2a2a2; }
   .navigation .lightest {
-    background: #cccccc; }
+    background: #bbbbbb; }
   .navigation ul:before, .navigation ul:after {
     display: table;
     content: "";
@@ -212,7 +212,7 @@ p {
 
 .btn-submit {
   font-size: 1.1em;
-  background: #4d4d4d;
+  background: #3c3c3c;
   border: none;
   border-radius: 5px;
   padding: 15px;
@@ -266,11 +266,20 @@ p {
 .contact-container {
   width: 100%;
   height: 100%;
-  background: #333;
+  background: #a4cfef;
+  background: -moz-linear-gradient(left, #a4cfef 0%, #b5d0eb 46%, #89a1f5 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #a4cfef), color-stop(46%, #b5d0eb), color-stop(100%, #89a1f5));
+  background: -webkit-linear-gradient(left, #a4cfef 0%, #b5d0eb 46%, #89a1f5 100%);
+  background: -o-linear-gradient(left, #a4cfef 0%, #b5d0eb 46%, #89a1f5 100%);
+  background: -ms-linear-gradient(left, #a4cfef 0%, #b5d0eb 46%, #89a1f5 100%);
+  background: linear-gradient(to right, #a4cfef 0%, #b5d0eb 46%, #89a1f5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4cfef', endColorstr='#89a1f5', GradientType=1 );
   position: absolute;
   overflow: hidden; }
   .contact-container p, .contact-container label, .contact-container h2 {
-    color: white; }
+    color: #333; }
+  .contact-container h2 {
+    text-align: center; }
 
 .cover-page {
   width: 100%;
@@ -327,11 +336,22 @@ p {
       background: #333;
       color: white;
       font-size: 1.1em;
-      padding: 8px; }
+      padding: 8px;
+      -webkit-transition: all .3s ease-in-out; }
+      .event-section .col-md-4 .btn-default:hover {
+        opacity: 0.9;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        background: #444; }
 
-#yosemite-icon-1 {
-  width: 300px;
-  margin-bottom: 20px; }
+.event-icons {
+  width: 280px;
+  margin-bottom: 20px;
+  -webkit-transition: all .3s ease-in-out; }
+  .event-icons:hover {
+    opacity: 0.9;
+    -webkit-transform: scale(1.1) rotateZ(5deg);
+    transform: scale(1.1) rotateZ(5deg); }
 
 .icon-row {
   margin-top: 100px;

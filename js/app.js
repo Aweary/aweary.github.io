@@ -10,7 +10,7 @@ angular.module('myApp', [
   'myApp.controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/', {templateUrl: 'partials/landing.html', controller: 'landingController'});
+  $routeProvider.when('/', {templateUrl: 'partials/event.html', controller: 'eventController'});
   $routeProvider.when('/event', {templateUrl: 'partials/event.html', controller: 'eventController'});
   $routeProvider.when('/contact', {templateUrl: 'partials/contact.html', controller: 'contactController'});
   $routeProvider.when('/location', {templateUrl: 'partials/location.html', controller: 'locationController'});
