@@ -92,7 +92,17 @@ controller('eventController', ['$scope',
             }
             $scope.emailSet = [];
             $scope.sendEmail = function() {
-                $scope.emailSet.push($scope.email);
+                var xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function(){
+                    if((xhr.readyState == 4) && (xhr.status == 200 || xhr.status == 304)){
+                        var output = document.getElementById('contact-form');
+                        output.innerHTML = xhr.responseText;
+                    }
+                };
+
+                xhr.open("GET", "/js/ajax.txt");
+                xhr.send(null);
+                return false;
             }
 
         }

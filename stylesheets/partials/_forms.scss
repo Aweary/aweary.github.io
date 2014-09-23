@@ -1,12 +1,14 @@
 .form-container {
 	max-width: 700px;
 	height: 100%;
-	margin-top: 60px;
+	bottom: 0px;
+	padding-top: 60px;
 	margin-left: auto;
 	margin-right: auto;
 	left: 0px;
 	right: 0px;
 	text-align: justify;
+
 	
 
 	p {
@@ -64,7 +66,7 @@ background: -ms-linear-gradient(left, rgba(164,207,239,1) 0%, rgba(181,208,235,1
 background: linear-gradient(to right, rgba(164,207,239,1) 0%, rgba(181,208,235,1) 46%, rgba(137,161,245,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4cfef', endColorstr='#89a1f5', GradientType=1 );
 	position: absolute;
-	overflow: hidden;
+
 
 	p, label, h2 {
 		color: #333;
