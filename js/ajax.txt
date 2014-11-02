@@ -1,4 +1,0 @@
-<h1>Thank you, your email has been sent. </h1>
-<br>	
-<br>
-<a href="/"><button class="btn-submit">Return Home</button></a>

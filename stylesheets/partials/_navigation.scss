@@ -3,12 +3,12 @@
 .navigation {
 
 	background-color: $primary-dark;
+	opacity: 1;
 	color: $font-color-light;
 	font-family: $default-font;
-	font-weight: 300;
 	height: $navigation-height-default;
 	line-height: $navigation-height-default;
-	position: relative;
+	position: fixed;
 	z-index: 10;
 
 	// clearfix before and after navigation bar
@@ -47,13 +47,20 @@
 		&:hover {
 			
 			a{
-			color: darken($primary-dark, 20%);
+			color: 	rgba(164,207,239,1);
+color: -moz-linear-gradient(left, rgba(164,207,239,1) 0%, rgba(181,208,235,1) 46%, rgba(137,161,245,1) 100%);
+color: -webkit-gradient(left top, right top, color-stop(0%, rgba(164,207,239,1)), color-stop(46%, rgba(181,208,235,1)), color-stop(100%, rgba(137,161,245,1)));
+color: -webkit-linear-gradient(left, rgba(164,207,239,1) 0%, rgba(181,208,235,1) 46%, rgba(137,161,245,1) 100%);
+color: -o-linear-gradient(left, rgba(164,207,239,1) 0%, rgba(181,208,235,1) 46%, rgba(137,161,245,1) 100%);
+color: -ms-linear-gradient(left, rgba(164,207,239,1) 0%, rgba(181,208,235,1) 46%, rgba(137,161,245,1) 100%);
+color: linear-gradient(to right, rgba(164,207,239,1) 0%, rgba(181,208,235,1) 46%, rgba(137,161,245,1) 100%);
 				}
 		}
 
 
 		a {
 			font-size: $small-font-size;
+			font-weight: 600;
 			color: $font-color-light;
 			text-decoration: none;
 			@include center;

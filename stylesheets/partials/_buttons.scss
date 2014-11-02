@@ -1,9 +1,24 @@
 .btn-submit {
-	font-size: 1.1em;
+	display: block;
+	left: 0;
+	right: 0;
+	margin: 35px auto;
+	font-size: 1.3em;
 	background: $btn-submit-bg;
 	border: none;
 	border-radius: 5px;
-	padding: 15px;
-	color: #fff;
+	padding: 16px;
+	color: #555;
 
+}
+
+.glyphicon-ok{
+	display: inline-block;
+	color: lightgreen;
+	font-size: 500px;
+	margin: auto;
+	left: 0px;
+	right: 0px;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
 }

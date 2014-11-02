@@ -1,78 +1,16 @@
 .form-container {
-	max-width: 700px;
-	height: 100%;
-	bottom: 0px;
-	padding-top: 60px;
-	margin-left: auto;
-	margin-right: auto;
+	width: 85%;
 	left: 0px;
 	right: 0px;
-	text-align: justify;
-
-	
+	margin: auto;
+	line-height: 2.5em;
 
 	p {
-		margin-bottom: 50px;
+		line-height: 2em !important;
 	}
 
-	form {
-		
-		margin: 0 auto;
-		text-align: center;
-
-		label {
-			
-			font-size: $large-font-size;
-
-		}
-
-		input {
-			
-			width: 90%;
-			height: $navigation-height-default;
-			border-radius: none;
-			margin-bottom: 50px;
-			margin-top: 20px;
-			font-size: 1.2em;
-			background: $input-bg;
-			border: none;
-			text-align: center;
-		}
-
-
-		textarea {
-			width: 90%;
-			height: $navigation-height-default * 2;
-			margin-bottom: 50px;
-			margin-top: 20px;
-			border: none;
-			background: $input-bg;
-
-		}
-
-	}
-}
-
-
-.contact-container {
-	width: 100%;
-	height: 100%;
-	background: rgba(164,207,239,1);
-background: -moz-linear-gradient(left, rgba(164,207,239,1) 0%, rgba(181,208,235,1) 46%, rgba(137,161,245,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(164,207,239,1)), color-stop(46%, rgba(181,208,235,1)), color-stop(100%, rgba(137,161,245,1)));
-background: -webkit-linear-gradient(left, rgba(164,207,239,1) 0%, rgba(181,208,235,1) 46%, rgba(137,161,245,1) 100%);
-background: -o-linear-gradient(left, rgba(164,207,239,1) 0%, rgba(181,208,235,1) 46%, rgba(137,161,245,1) 100%);
-background: -ms-linear-gradient(left, rgba(164,207,239,1) 0%, rgba(181,208,235,1) 46%, rgba(137,161,245,1) 100%);
-background: linear-gradient(to right, rgba(164,207,239,1) 0%, rgba(181,208,235,1) 46%, rgba(137,161,245,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4cfef', endColorstr='#89a1f5', GradientType=1 );
-	position: absolute;
-
-
-	p, label, h2 {
-		color: #333;
-	}
-
-	h2 {
-		text-align: center;
+	.col-xs-12 {
+		padding-top: 100px;
+		padding-bottom: 20px;
 	}
 }
