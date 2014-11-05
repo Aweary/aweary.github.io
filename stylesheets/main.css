@@ -282,18 +282,6 @@ p {
   right: 0;
   top: 0; }
 
-.btn-submit {
-  display: block;
-  left: 0;
-  right: 0;
-  margin: 35px auto;
-  font-size: 1.3em;
-  background: #a9f1a5;
-  border: none;
-  border-radius: 5px;
-  padding: 16px;
-  color: #555; }
-
 .glyphicon-ok {
   display: inline-block;
   color: lightgreen;
@@ -396,7 +384,7 @@ p {
   padding-top: 150px; }
   @media screen and (max-width: 1000px) {
     #event-1 {
-      height: 1600px;
+      height: 1700px;
       padding-top: 100px; } }
   #event-1 .col-md-4 {
     padding-bottom: 20px; }
@@ -410,7 +398,20 @@ p {
       height: 1400px; } }
 
 #event-3 {
-  background: lightblue; }
+  background: #fff;
+  color: #333;
+  height: 900px; }
+  #event-3 .row-container {
+    width: 85%;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    line-height: 2.5em; }
+    #event-3 .row-container .row {
+      float: left;
+      margin-top: 50px; }
+  #event-3 .registry-bg {
+    background: #a5cff1; }
 
 .bottom-section {
   float: left;
@@ -418,7 +419,7 @@ p {
   right: 0px;
   top: 0px;
   width: 100%;
-  height: 400px;
+  height: 350px;
   text-align: center;
   background: url("../img/yosemite.jpg");
   -webkit-background-size: cover;
@@ -426,6 +427,9 @@ p {
   -o-background-size: cover;
   background-size: cover;
   opacity: 1; }
+  @media screen and (max-width: 780px) {
+    .bottom-section {
+      height: 300px; } }
 
 .parallax {
   perspective: 1px;

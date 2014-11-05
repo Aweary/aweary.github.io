@@ -1,4 +1,3 @@
-
 <div class="container-fluid full-width" ng-controller="homeCtrl">
 
 
@@ -24,7 +23,7 @@
                     <h4 class="fancy-title">RSVP!</h3>
                         <p>The sooner the better: so that we can plan for food and table arrangements accordingly, please RSVP as soon as you.</p>
                         <br>
-                        <p><a class="btn btn-default " href="#/contact" role="button">View details &raquo;</a>
+                        <p><a class="btn btn-success " href="" role="button" ng-click="gotoAnchor(2)">View details &raquo;</a>
                         </p>
                 </div>
 
@@ -32,8 +31,7 @@
                     <img src="./img/yosemite-icon.png" alt="" class="event-icons" id="yosemite-icon">
                     <h4 class="fancy-title">Yosemite Valley</h3>
                         <p>The ceremony and reception will be held on <b>April 11th, 2015</b> at Yosemite National Park. The Ceremony will be at the Lower Falls and the reception will be held at the Yosemite Lodge. Click below for details.</p>
-                        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a>
-                        </p>
+
                 </div>
 
                 <div class="col-md-4">
@@ -41,7 +39,7 @@
                     <h4 class="fancy-title">Gift Registery</h3>
                         <p>We appreciate any and all wedding gifts! To hopefully make everything less stressful for you, we've outlined a few specific things we actually need. Click below for a detailed list.</p>
                         <br>
-                        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a>
+                        <p><a class="btn btn-success" href="" role="button" ng-click="gotoAnchor(3)">View details &raquo;</a>
                         </p>
                 </div>
 
@@ -61,17 +59,20 @@
                     <h7 class='white rsvp-subtitle'>{{texts.rsvp_subtitle}}</h7>
                 </div>
             </div>
-                
 
-                <div class="row center">
-                    <div class="col-xs-12 col-md-12"><h6 class='alert-text'>{{message}}<h6></div>
+
+            <div class="row center">
+                <div class="col-xs-12 col-md-12">
+                    <h6 class='alert-text'>{{message}}
+                        <h6>
                 </div>
+            </div>
             <div class="row">
                 <div class="form-container">
 
 
                     <form role="form" ng-model="content">
-                    
+
 
                         <div class="col-xs-12 col-md-6">
                             <p>So we can be 100% sure that we plan for the right headcount, please use this form to RSVP as soon as you can. This way we can properly accomdate and prepare. If you have any special requests or notes, please ask them in the 'Special notes' seciton on the form.</p>
@@ -115,7 +116,39 @@
     </div>
 
 
-    <div class="event-section" id="event-3"></div>
+    <div class="event-section" id="event-3">
 
+
+        <div class="container-fluid">
+
+            <div class="bottom-section registry-bg">
+                <div class="vh-center">
+                    <h1 class='fancy-title black secondary-title rsvp-title'>Registry and Gifts</h1>
+                    <h7 class='white rsvp-subtitle'></h7>
+                </div>
+            </div>
+            <div class="row-container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <p>While we will appreciate any and all gifts, we wanted to take a few moments to outline what we feel would be most useful to us. Over the years we've gathered the various basic household accessories and appliances that are--traditionally--gifted at a wedding.</p>
+                        <br>
+                        <p>The main thing that we need, at the moment, are basic funds. We really want to be able to travel and experience all there is out there, so if you are considering gifts, good old fashion cash would really help us out most.</p>
+                        <br>
+                        <p>Its a little awkward asking for cash, and I know it can feel like an ingenuine, impresonal gift, but just know that at this point in our lives it would be the most usful to us.</p>
+                        <br>
+                        <p>Thanks,</p>
+                        <p><b>Brandon & Teri</b>
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</div>
 
 </div>
