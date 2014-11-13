@@ -410,12 +410,8 @@ p {
     line-height: 2.5em; }
     #event-3 .row-container .row {
       float: left;
-      margin: auto; }
+      margin: 500px auto; }
 
-  @media screen and (max-width: 880px) {
-     #event-3 .col-md-6{
-        margin-top: 500px;
-      } }
 
 
   #event-3 .registry-bg {
