@@ -428,7 +428,11 @@ p {
 
 
   #event-3 .registry-bg {
-    background: #a5cff1; }
+     background: url("../img/wedding.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
     #event-3 img {
       display: block;
