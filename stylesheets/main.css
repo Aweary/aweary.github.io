@@ -414,7 +414,7 @@ p {
        }
 
        @media screen and (min-width: 880px){
-        #event-3 .row-container .row {
+        .gifts-text {
           padding-top: 100px;
         }
        }
