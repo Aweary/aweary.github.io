@@ -419,6 +419,12 @@ p {
         }
        }
 
+       @media screen and (max-width: 880px){
+        .gifts-text {
+          text-align: center;
+        }
+       }
+
 
 
   #event-3 .registry-bg {
