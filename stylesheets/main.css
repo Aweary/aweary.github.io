@@ -465,7 +465,7 @@ h9 {
 .page-wrapper {
   width: 100%;
   height: auto;
-  background: #333;
+  background: #fff;
   position: absolute;
   top: 0px;
   text-align: center;
@@ -473,8 +473,11 @@ h9 {
 
 .content-wrapper {
   margin: 0 auto;
-  max-width: 1400px;
-  width: 100%; }
+  max-width: 1650px;
+  width: 100%;
+  -webkit-box-shadow: 10px 10px 300px 2px rgba(128, 119, 128, 0.48);
+  -moz-box-shadow: 10px 10px 300px 2px rgba(128, 119, 128, 0.48);
+  box-shadow: 10px 10px 300px 2px rgba(128, 119, 128, 0.48); }
 
 .content-section {
   display: inline-block;
@@ -519,7 +522,7 @@ h9 {
   position: absolute; }
 
 .main-section {
-  max-width: 1400px;
+  max-width: 1650px;
   min-height: 0px;
   height: auto;
   background: #fff; }
@@ -538,7 +541,7 @@ h9 {
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1); }
   @media screen and (min-width: 780px) {
     .navbar {
-      max-width: 1400px;
+      max-width: 1650px;
       display: inline-block;
       float: none; } }
 
