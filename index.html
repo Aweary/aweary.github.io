@@ -1,90 +1,221 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html lang="en" ng-app="myApp" class="no-js">
-<!--<![endif]-->
+<html class="no-js">
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Brandon & Teri's Wedding</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
-    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
-    <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+    <meta name=viewport content="width=device-width, initial-scale=1">
 
-    <!-- fonts! -->
-
-    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-
-    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
-
+    <!-- FONTS! -->
     <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-
-    <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
-
-
-    <!-- Jquery -->
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-    <!-- Latest compiled and minified Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 
 
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="stylesheets/main.css">
 
-
+    <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]-->
 </head>
+
 
 <body>
 
- <nav class="fixed navigation" ng-controller="homeCtrl">
-
-        <ul class="nav-section-small right">
-            <a href="" ng-click="gotoAnchor(3)">Registry</a>
-        </ul>
-
-        <ul class="nav-section-small right">
-            <a href="" ng-click="gotoAnchor(2)">RSVP</a>
-        </ul>
-
-    </nav>
-
-    <!-- Fixed navbar -->
+    <div class="page-wrapper">
 
 
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="./img/heart.png" alt="">
+            </div>
 
-    <div class='content-container' ng-view></div>
+            <div class="nav-menu-toggle">
+                <span class="nav-menu-toggle-bar"></span>
+                <span class="nav-menu-toggle-bar"></span>
+                <span class="nav-menu-toggle-bar"></span>
+            </div>
+
+            <ul class='nav-list'>
+                <li class="nav-item"><a href="#section-1">Details</a>
+                </li>
+                <li class="nav-item"><a href="#section-2">RSVP</a>
+                </li>
+                <li class="nav-item"><a href="#section-3">Registry</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div class="content-wrapper">
+
+            <div class="content-section header wedding-bg">
+                <div class="content-section-title header-title bottom">
+                    <h1 class='title fancy-title' id="section-1">We're tying the knot!</h1>
+                    <p>On April 11th, 2015 Brandon Dail and Teri Yesh will be getting married at Yosemite National Park!</p>
+                </div>
+            </div>
+
+            <!-- end header div -->
 
 
 
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="app.js"></script>
-    <script src="view1/view1.js"></script>
-    <script src="view2/view2.js"></script>
-    <script src="home/home.js"></script>
-    <script src="components/version/version.js"></script>
-    <script src="components/version/version-directive.js"></script>
-    <script src="components/version/interpolate-filter.js"></script>
-    <!-- AngularFire -->
-    <script src="https://cdn.firebase.com/libs/angularfire/0.8.2/angularfire.min.js"></script>
+            <div class="content-section main-section">
+
+                <div class="grid-container">
+                    <div class="grid-row">
+                        <div class="col-12 col-md-4">
+                            <img src="./img/registery-icon.png" alt="">
+                            <p class='img-caption'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe officia rem, quas molestiae! Facere explicabo perferendis consequuntur? Ipsum facere, non ipsa est quae repudiandae consequuntur molestias fuga sequi, tempora nemo.</p>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <img src="./img/yosemite-icon.png" alt="">
+                            <p class='img-caption'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe officia rem, quas molestiae! Facere explicabo perferendis consequuntur? Ipsum facere, non ipsa est quae repudiandae consequuntur molestias fuga sequi, tempora nemo.</p>
+                        </div>
+
+                        <div class="col-6 col-md-4">
+                            <img src="./img/contact-icon.png" alt="">
+                            <p class='img-caption'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe officia rem, quas molestiae! Facere explicabo perferendis consequuntur? Ipsum facere, non ipsa est quae repudiandae consequuntur molestias fuga sequi, tempora nemo.</p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- end section-1 div -->
+
+            <div class="content-section main-section" id='section-2' ng-app='rsvpApp' ng-controller="rsvpController">
+                <div class="content-section-title main-section-title blue-bg">
+                    <h1 class='title fancy-title center' ng-bind='rsvpTitle'></h1>
+                </div>
+
+                <div class="grid-container">
+                    <div class="grid-row rsvp-row">
+                        <div class="col-12 col-md-5 col-center rsvp-details">
+                            <h2>Thanks for coming!</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae commodi, nostrum eaque ad, a, eligendi provident soluta suscipit architecto laboriosam ducimus inventore quis quod consectetur, consequatur repellat amet incidunt sed.</p>
+
+                            <br>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error voluptatibus libero modi, deleniti quia asperiores totam soluta consequatur, quis ex atque eaque, inventore ipsum. Praesentium repellat, modi quia quisquam minus.</p>
+
+                            <br>
+                            <h2 class='status-{{rsvpStatus}}' ng-bind='messages.rsvpStatus'></h2>
+                        </div>
+                        <div class="col-12 col-md-7 rsvp-form">
+                            <div class="form-container">
+                                <form id="rsvpForm" ng-submit="addRSVP(attende)">
+                                    <label for="attende-firstname">
+                                        <h4>First name:</h4>
+                                    </label>
+                                    <input type="text" id="attende-firstname" ng-model="attende.firstname">
+                                    <label for="attende-lastname">
+                                        <h4>Last name:</h4>
+                                    </label>
+                                    <input type="text" id="attende-lastname" ng-model="attende.lastname">
+                                    <label for="attende-email">
+                                        <h4>Email:</h4>
+                                    </label>
+                                    <input type="email" id="attende-email" ng-model="attende.email">
+                                    <label for="attende-notes">
+                                        <h4>Special Notes:</h4>
+                                    </label>
+                                    <textarea id="attende-notes" ng-model="attende.notes"></textarea>
+                                    <br>
+                                    <input type="submit" form="rsvpForm" value="Submit" class='btn btn-success'>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end grid-container -->
+            </div>
+
+            <!-- end secion-2 div -->
+
+
+            <div class="content-section main-section" id="section-3">
+                <div class="content-section-title main-section-title green-bg">
+                    <h1 class='title fancy-title center'>Registry & Gifts</h1>
+                </div>
+
+                <div class="grid-container">
+                    <div class="grid-row">
+                        <div class="col-8 col-md-7 registry-details">
+
+                            <h1 class="title fancy-title">Funding our life together</h1>
+
+                            <p>While we will appreciate any and all gifts, we wanted to take a few moments to outline what we feel would be most useful to us. Over the years we've gathered the various basic household accessories and appliances that are--traditionally--gifted at a wedding.
+                            </p>
+                            <p>The main thing that we need, at the moment, are basic funds. We really want to be able to travel and experience all there is out there, so if you are considering gifts, a monetary gift would be best for us, so we can do things like: 
+
+                            	<ul>
+                            		<li>Pay for our wedding</li>
+                            		<li>Fund our honeymoon</li>
+                            		<li>Go hiking in as many National Parks as possible!</li>
+                            		<li>Start building up our savings</li>
+                            	</ul>
+                            </p>
+
+                        </div>
+
+                        <div class="col-4 col-md-5">
+                            <img src="./img/gifts-icon.png" alt="" id="gifts-icon">
+                        </div>
+                    </div>
+                </div>
+                <!-- end grid-container -->
+            </div>
+
+            <!-- end section-3 div -->
+
+
+            <div class="content-section main-section" id="section-4">
+                <div class="content-section-title main-section-title yosemite-cover-bg">
+                    <h1 class='title fancy-title center'>Event Details</h1>
+                </div>
+
+                <div class="grid-container">
+                    <div class="grid-row">
+                        <div class="col-6 col-md-6">
+                            <h1 class="title">Getting to Yosemite</h1>
+                            <br>
+                            <p>The ceremony itself will be held at the Yosemite Lower Falls, which is on a paved trail near Yosemite Lodge. The reception will be help at Yosemite Lodge itself.</p>
+                            <h1>MORE DETAILS TO COME. CHECK BACK SOON!</h1>
+                        </div>
+                        <div class="col-6 col-md-6">
+                            <div id="map_canvas"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end grid-container -->
+            </div>
+
+            <!-- end section-4 div -->
+        </div>
+    </div>
+
+
+
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.19/angular.min.js"></script>
+
     <!-- Firebase -->
     <script src="https://cdn.firebase.com/js/client/1.0.21/firebase.js"></script>
-    
+
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/0.8.2/angularfire.min.js"></script>
+
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <!-- Main JS -->
+    <script src="main.js"></script>
 </body>
 
 </html>
