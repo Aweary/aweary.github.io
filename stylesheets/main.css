@@ -849,7 +849,6 @@ textarea {
     text-align: center; }
 
 #map_canvas {
-  min-width: 600px;
   max-width: 900px;
   margin: 0 auto;
   height: 600px;
