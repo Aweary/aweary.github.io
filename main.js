@@ -1,26 +1,56 @@
 var menuToggle = document.querySelectorAll('.nav-menu-toggle')[0];
 var menuContainer = document.querySelectorAll('.navbar')[0];
 var contentWrapper = document.querySelectorAll('.content-wrapper')[0];
+var contentSection = document.querySelectorAll('.content-section')
 var menuList = document.querySelectorAll('.nav-list')[0];
 var menuItem = document.querySelectorAll('.nav-item')[0];
 
 console.log(menuContainer)
 
-menuToggle.addEventListener('click', function() {
+menuContainer.addEventListener('click', function() {
+
+    changeToggleMenu();
     menuContainer.classList.toggle('nav-expanded');
-    menuList.classList.toggle('nav-list-expanded');
-    console.log(menuContainer)
+    for(var i = 0; i < contentSection.length; i++)
+{
+    contentSection[i].classList.toggle('content-section-expanded');
+}    menuList.classList.toggle('nav-list-expanded');
+    console.log('clicked')
 }, false);
 
 
 var collapseMenu = function() {
     if (menuContainer.classList.contains('nav-expanded')) {
         menuContainer.classList.remove('nav-expanded');
+        for(var i = 0; i < contentSection.length; i++)
+{
+    contentSection[i].classList.toggle('content-section-expanded');
+}
         menuList.classList.remove('nav-list-expanded');
     }
 }
 
 window.onresize = collapseMenu;
+
+
+function changeToggleMenu(){
+    var toggleMenuBars = document.getElementsByClassName('nav-menu-toggle-bar');
+    toggleMenuBars[0].classList.toggle('menu-toggle-bar-rotated-1');
+    toggleMenuBars[1].classList.toggle('menu-toggle-bar-rotated-2');
+    toggleMenuBars[2].classList.toggle('hidden');
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 menuItem.addEventListener('click', collapseMenu);
 
