@@ -21,6 +21,7 @@ menuContainer.addEventListener('click', function() {
 
 var collapseMenu = function() {
     if (menuContainer.classList.contains('nav-expanded')) {
+        changeToggleMenu()
         menuContainer.classList.remove('nav-expanded');
         for(var i = 0; i < contentSection.length; i++)
 {
@@ -34,6 +35,7 @@ window.onresize = collapseMenu;
 
 
 function changeToggleMenu(){
+    console.log('toggle menu change')
     var toggleMenuBars = document.getElementsByClassName('nav-menu-toggle-bar');
     toggleMenuBars[0].classList.toggle('menu-toggle-bar-rotated-1');
     toggleMenuBars[1].classList.toggle('menu-toggle-bar-rotated-2');
