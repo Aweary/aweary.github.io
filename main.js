@@ -3,11 +3,11 @@ var menuContainer = document.querySelectorAll('.navbar')[0];
 var contentWrapper = document.querySelectorAll('.content-wrapper')[0];
 var contentSection = document.querySelectorAll('.content-section')
 var menuList = document.querySelectorAll('.nav-list')[0];
-var menuItem = document.querySelectorAll('.nav-item')[0];
+var menuItem = document.querySelectorAll('.nav-item');
 
 console.log(menuContainer)
 
-menuContainer.addEventListener('click', function() {
+menuToggle.addEventListener('click', function() {
 
     changeToggleMenu();
     menuContainer.classList.toggle('nav-expanded');
@@ -50,11 +50,11 @@ function changeToggleMenu(){
 
 
 
+for(var j = 0; j < menuItem.length; j++){
+    menuItem[j].addEventListener('click', collapseMenu);
+}
 
 
-
-
-menuItem.addEventListener('click', collapseMenu);
 
 
 function initialize() {

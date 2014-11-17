@@ -474,7 +474,7 @@ h9 {
 .content-wrapper {
   z-index: 0;
   margin: 0 auto;
-  max-width: 1650px;
+  max-width: 1450px;
   width: 100%;
   -webkit-box-shadow: 10px 10px 300px 2px rgba(128, 119, 128, 0.48);
   -moz-box-shadow: 10px 10px 300px 2px rgba(128, 119, 128, 0.48);
@@ -528,7 +528,7 @@ h9 {
   position: absolute; }
 
 .main-section {
-  max-width: 1650px;
+  max-width: 1450px;
   min-height: 0px;
   height: auto;
   background: #fff; }
@@ -539,24 +539,24 @@ h9 {
 
 .navbar {
   z-index: 1;
-  transform: translatey(-230px);
-  -webkit-transform: translatey(-230px);
-  -ms-transform: translatey(-230px);
+  transform: translatey(-230px) !important;
+  -webkit-transform: translatey(-230px) !important;
+  -ms-transform: translatey(-230px) !important;
   width: 100%;
   height: 300px;
   background: #4172cb;
   position: fixed;
   top: 0px;
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1); }
-  @media screen and (min-width: 780px) {
+  @media screen and (min-width: 880px) {
     .navbar {
-      transform: translatey(0px);
-      -webkit-transform: translatey(0px);
+      transform: translatey(0px) !important;
+      -webkit-transform: translatey(0px) !important;
       -ms-transform: translatey(0px);
       position: relative;
       top: 0px;
       height: 60px;
-      max-width: 1650px;
+      max-width: 1450px;
       display: inline-block;
       float: none; } }
 
