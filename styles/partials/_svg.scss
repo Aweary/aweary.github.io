@@ -1,0 +1,154 @@
+.icon {
+	width: 90%;
+	height: auto;
+	margin: 5% auto;
+	@include transition(1s);
+
+	&:hover {
+	@include transform(scale(1.1));
+}
+}
+
+.icon-container {
+	width: 300px;
+	height: 300px;
+	border-radius: 100%;
+	background-color: lighten(#7d846e, 30%);
+	margin: 10% auto;
+	@include transition(0.5s);
+
+	&:hover {
+		
+		@include transform(scale(1.1));
+
+	}
+
+	@include breakpoint($mamma-bear){
+		width: 140px;
+		height: 140px;
+	}
+
+}
+
+
+
+.svg-road {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
+    width: 100vw;
+    max-width: 1200px;
+    z-index:4;
+}
+
+.sky {
+
+	h1 {
+
+		font-family: $title-font;
+	}
+
+	position: relative;
+	height: 600px;
+	background-color: complement(darken(#DB9E9E, 10%));
+	text-align: center;
+
+	@include breakpoint(880px){
+		min-height: 400px;
+	}
+
+
+}
+
+.mountains {
+	border-bottom: 10px solid lighten(#7d846e, 40%);
+	height: 50vh;
+	overflow: visible;
+	background: url('../images/mountains-2.svg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+ 	-o-background-size: cover;
+	background-size: cover;
+	background-color: complement(darken(#DB9E9E, 10%));
+	@include breakpoint(768px){
+		height: 60vh;
+	}
+
+	@include breakpoint(880px){
+		min-height: 80vh;
+	}
+
+	@include breakpoint(900px){
+		min-height: 100vh;
+	};
+
+
+
+
+
+}
+
+
+
+.road {
+	z-index: 2;
+	background: url('../images/main-road.svg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+ 	-o-background-size: cover;
+	background-size: cover;
+	
+}
+
+.yosemite {
+    margin: 0 auto;
+    width: 100%;
+  
+}
+
+
+.svg-wrap {	
+	@include span(12);
+	height: 50%;
+	background-color: #333;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	.svg-content	{
+		position: relative;
+		overflow: hidden;
+	}
+}
+
+
+
+.car {
+	width: 15em;
+
+}
+
+.car-container {
+	padding-top: 45%;
+	width: 16em;
+	height: 16em;
+	@include border-top-radius(50%);
+@include border-right-radius(50%);
+@include border-bottom-radius(50%);
+@include border-left-radius(50%);
+	background-color: #666;
+
+}
+
+
+// @include keyframes(car-driving) {
+//   from {
+//     @include transform(translate(-100%, 0%));
+//   }
+//   to {
+//     @include transform(translate(-100%, -200%));
+//   }
+// }

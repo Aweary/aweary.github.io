@@ -1,0 +1,48 @@
+// 			=============================
+//     			     Fonts
+// 			=============================
+
+$base-font-size: 14px;
+$base-font-family: 'Muli', sans-serif;
+
+$title-font: 'Sacramento', cursive;
+
+
+
+
+// 			=============================
+//     			     Grids
+// 			=============================
+
+$mamma-bear: 800px;
+$papa-bear: 1200px;
+$susy: (
+	
+	columns: 12,
+	container: 100%,
+	gutter-position: split,
+	container-position: center,
+	global-box-sizing: border-box
+
+	);
+
+
+
+
+
+
+
+// 			=============================
+//     			     Navigation
+// 			=============================
+
+
+$main-section-height: 0px;
+$main-section-max-width: 1450px;
+$header-height: 95vh;
+$header-title-height: 250px;
+$main-section-title-height: 250px;
+$content-width: 1450px;
+$navbar-height: 300px;
+$nav-menu-toggle-size: 40px;
+$fancy-font:'Pacifico', cursive;

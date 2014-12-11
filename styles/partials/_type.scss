@@ -1,0 +1,12 @@
+h1 {
+    font-size: 3em;
+    @include breakpoint(768px) {
+        font-size: 3.4em;
+    }
+    @include breakpoint(880px) {
+        font-size: 4em;
+    }
+    @include breakpoint(980px) {
+        font-size: 5em;
+    }
+}

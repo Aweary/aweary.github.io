@@ -1,0 +1,21 @@
+.btn {
+	width: 100px;
+	height: 30px;
+	padding: 15px;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.1em;
+	line-height: 0em;
+	@include transition(0.5s);
+
+	&:hover {
+		@include transform(scale(1.1));
+	}
+
+}
+
+.btn-success {
+	color: white;
+	background-color: #46bc6d;
+}
+

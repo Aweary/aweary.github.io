@@ -1,0 +1,35 @@
+hr {
+    height: 10px;
+    border: none;
+    margin-top: 10px;
+    @include linear-gradient(to left, #00b4e5, ligthen(#00b4e5, 10%))
+}
+.rsvp {
+    h1 {
+        font-family: 'Josefin Slab', serif;
+        //font-weight: 700;
+        color: #00b4e5
+    }
+	
+	p {
+		width: 70%;
+		margin: 2% auto;
+		padding: 0%, 5%, 0%, 5%;
+	}
+
+    color: #222;
+}
+
+
+.hidden {
+	display: none !important;
+}
+
+a {
+	text-decoration: none;
+	color: #00b4e5;
+
+	&:focus {
+		@include transform(scale(1.1));
+	}
+}

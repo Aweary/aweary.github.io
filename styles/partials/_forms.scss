@@ -1,0 +1,49 @@
+.form-container {
+	//background: #fff;
+	max-height: 900px;
+	height: auto;
+	width: 100%;
+	max-width: 780px;
+	padding: 1rem;
+	line-height: 5rem;
+	text-align: center;
+
+	// .form-container class media queries
+
+    @media screen and (min-width: 780px) {
+		width: 95%;
+		margin: auto;
+    }
+
+
+} //end .form-container class
+
+
+
+input[type='text'], input[type='email']{
+	height: 40px;
+	border: none;
+	background: #ccc;
+	text-align: center;
+	width: 80%;
+	display: inline-block;
+
+	&:before {
+		content: "";
+		display: block;
+		background: #333;
+		width: 10%;
+		height: 100%;
+
+	}
+}
+
+textarea {
+	background: #ccc;
+	border: none;
+	text-align: center;
+	display: inline-block;
+	width: 80%;
+	height: 80px;
+}
+

@@ -1,1 +1,47 @@
-<div class="wrap"> <div class="full-page"> <div class="half-width-section rsvp"> <h1>{{rsvpStatus}}</h1> <div class="icon-container rsvp-icon"><img src="./images/rsvp.9d88e06e.svg" alt="" class="icon" style="margin-top: 20%"></div> <p>So we can be 100% sure that we plan for the right headcount, please use this form to RSVP as soon as you can. This way we can properly accomdate and prepare. If you have any special requests or notes, please ask them in the 'Special notes' seciton on the form.</p> <br> <p>If for some reason you are having issues with the form, or you'd like to ask some questions before RSVP'ing, please feel free to email us at <a href="mailto:rsvp@dailwedding.info">rsvp@dailwedding.info</a> </p> </div> <div class="half-width-section rsvp"> <div class="form-container rsvp-form"> <form id="rsvpForm" ng-submit="addRSVP(attende)"> <label for="attende-firstname"> <h4>First name:</h4> </label> <input type="text" id="attende-firstname" ng-model="attende.firstname"> <label for="attende-lastname"> <h4>Last name:</h4> </label> <input type="text" id="attende-lastname" ng-model="attende.lastname"> <label for="attende-email"> <h4>Email:</h4> </label> <input type="email" id="attende-email" ng-model="attende.email"> <label for="attende-notes"> <h4>Special Notes:</h4> </label> <textarea id="attende-notes" ng-model="attende.notes"></textarea> <br> <input type="submit" form="rsvpForm" value="Submit" class="btn btn-success"> </form> </div> </div> </div> </div>
+<div class="wrap">
+<div class="full-page">
+    
+<div class="half-width-section rsvp">
+<h1 >{{rsvpStatus}}</h1>
+
+<div class="icon-container rsvp-icon"><img src="./images/rsvp.svg" alt="" class='icon' style='margin-top: 20%'></div>
+
+                            <p>So we can be 100% sure that we plan for the right headcount, please use this form to RSVP as soon as you can. This way we can properly accomdate and prepare. If you have any special requests or notes, please ask them in the 'Special notes' seciton on the form.</p>
+                            <br>
+                            <p>If for some reason you are having issues with the form, or you'd like to ask some questions before RSVP'ing, please feel free to email us at <a href="mailto:rsvp@dailwedding.info">rsvp@dailwedding.info</a>
+                            </p>
+
+                    
+
+                            </div>
+
+  <div class="half-width-section rsvp">
+        
+           <div class="form-container rsvp-form">
+
+                                <form id="rsvpForm" ng-submit="addRSVP(attende)">
+                                    <label for="attende-firstname">
+                                        <h4>First name:</h4>
+                                    </label>
+                                    <input type="text" id="attende-firstname" ng-model="attende.firstname">
+                                    <label for="attende-lastname">
+                                        <h4>Last name:</h4>
+                                    </label>
+                                    <input type="text" id="attende-lastname" ng-model="attende.lastname">
+                                    <label for="attende-email">
+                                        <h4>Email:</h4>
+                                    </label>
+                                    <input type="email" id="attende-email" ng-model="attende.email">
+                                    <label for="attende-notes">
+                                        <h4>Special Notes:</h4>
+                                    </label>
+                                    <textarea id="attende-notes" ng-model="attende.notes"></textarea>
+                                    <br>
+                                    <input type="submit" form="rsvpForm" value="Submit" class='btn btn-success'>
+                                </form>
+                            </div>
+
+
+  </div>
+</div>
+</div>
